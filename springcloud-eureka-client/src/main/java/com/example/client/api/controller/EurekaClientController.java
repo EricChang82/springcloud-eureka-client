@@ -14,7 +14,7 @@ public class EurekaClientController {
  
     /** 
      *@author changle
-     *Create Time: 2019年4月16日 
+     *Create Time: 2019年4月16日  
      *Purpose:提供的一个restful服务，返回内容格式：服务协议://服务器地址:服务端口/服务uri
      */
     @RequestMapping("/info")
