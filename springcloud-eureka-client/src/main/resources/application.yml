@@ -1,10 +1,9 @@
 server:
   port: 52601
- 
+#服务别名（服务注册到服务中心的名称） 
 spring:
   application:
     name: eureka-client
- 
 eureka:
   instance:
     hostname: localhost
@@ -18,5 +17,11 @@ eureka:
     lease-expiration-duration-in-seconds: 10
   client:
     serviceUrl:
+    # 当前服务注册到Eureka服务地址，配置多个地址实现集群
       defaultZone: http://localhost:9527/eureka/,http://localhost:9528/eureka/,http://localhost:9529/eureka/
-#      defaultZone: http://localhost:9528/eureka/,http://localhost:9529/eureka/
+
+    #以下没有也可以,没有的话采用默认值
+      register-with-eureka: true #注册到Eureka服务中心(默认为true)
+      fetch-registry: false #需要检索服务(默认为true)
+      
+
