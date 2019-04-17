@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EurekaClientController {
      
-    @Value("${server.port}")
+    @Value("${server.port}") 
     private String port;
  
     /**
