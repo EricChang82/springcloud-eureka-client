@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EurekaClientController {
      
     @Value("${server.port}") 
-    private String port;
+    private String port; 
  
     /** 
      *@author changle
